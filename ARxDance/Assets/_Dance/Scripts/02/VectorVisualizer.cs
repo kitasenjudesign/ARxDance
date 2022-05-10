@@ -71,12 +71,12 @@ public class VectorVisualizer : MonoBehaviour {
 
         for(int i=0;i<_ballVel.Length;i++){
            
-            if( _ballVel[i].smoothVelocityMag > _velocityTh){
+            if( _ballVel[i].velocityMag > _velocityTh){
                 _data[_index%_data.Length].pos=
                     _ballVel[i].transform.position;
 
                 _data[_index%_data.Length].velocity = 
-                    _ballVel[i].smoothVelocity*1.5f;
+                    _ballVel[i].velocity*1.5f;
 
                 _data[_index%_data.Length].time=0;
                 _index++;

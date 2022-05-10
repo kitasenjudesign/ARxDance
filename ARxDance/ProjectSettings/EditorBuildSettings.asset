@@ -12,20 +12,20 @@ EditorBuildSettings:
     path: Assets/_Dance/Scenes/01/01_basic.unity
     guid: 1b8de4119d7804725aac128f523a31d1
   - enabled: 1
-    path: Assets/_Dance/Scenes/02/02a_BodyTrack_ball.unity
-    guid: 07170bd37625c49959082b29e02155cd
+    path: Assets/_Dance/Scenes/02/02_ball.unity
+    guid: c9f690ee7312f4ebea114c869f46edba
   - enabled: 1
-    path: Assets/_Dance/Scenes/02/02a_BodyTrack_connect2.unity
-    guid: 03dbd3cac6d60454d864311887ba290f
+    path: Assets/_Dance/Scenes/02/02_connect.unity
+    guid: 3977b1e22a5cf4d24be3396b645f0dec
   - enabled: 1
-    path: Assets/_Dance/Scenes/02/02b_BodyTrack_trail.unity
-    guid: 8ac57f38dfbba48a7bbbf960e3c0bd1c
+    path: Assets/_Dance/Scenes/02/02_trail.unity
+    guid: 520478b1a6e4e493285f9f3aa5b3b68d
   - enabled: 1
-    path: Assets/_Dance/Scenes/02/02b_BodyTrack_vector.unity
-    guid: a3571cf5ae0944a68b3f68e1748cdb9d
+    path: Assets/_Dance/Scenes/02/02_velocity.unity
+    guid: 6ee6cf21e23464dc38653c05649f573e
   - enabled: 1
-    path: Assets/_Dance/Scenes/02/02d_BodyTrack_terumin.unity
-    guid: f63f3b4a7614c43e0aaf12a58eb328c3
+    path: Assets/_Dance/Scenes/02/02_terumin.unity
+    guid: 4915ba9bf9fe147ad826a3608359e6ac
   - enabled: 1
     path: Assets/_Dance/Scenes/03/03_Stencil.unity
     guid: cbfde2edf83af4bea8806699e433d7af

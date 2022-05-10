@@ -21,9 +21,16 @@ public class PieceData {
     public void Update(){
 
         pos += velocity;
-        
+        //velocity*=0.99f;
+        //var mag = velocity.magnitude;
+
+        //velocity.x += mag*0.02f* Mathf.PerlinNoise(pos.y,pos.z);
+        //velocity.y += mag*0.02f* Mathf.PerlinNoise(pos.z,pos.x);
+        //velocity.z += mag*0.02f* Mathf.PerlinNoise(pos.x,pos.y);
+        //velocity*=0.99f;
+
         var mag = velocity.sqrMagnitude;
-        if(mag>0.0000001f){
+        if(mag>0.01f*0.01f){
             rot = Quaternion.LookRotation(velocity,Vector3.up);
         }
         

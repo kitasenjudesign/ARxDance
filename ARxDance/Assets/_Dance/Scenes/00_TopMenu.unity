@@ -154,11 +154,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _sceneNames:
   - 01_basic
-  - 02a_BodyTrack_ball
-  - 02b_BodyTrack_trail
-  - 02b_BodyTrack_vector
-  - 02a_BodyTrack_connect2
-  - 02d_BodyTrack_terumin
+  - 02_ball
+  - 02_velocity
+  - 02_terumin
+  - 02_trail
 --- !u!4 &693937454
 Transform:
   m_ObjectHideFlags: 0

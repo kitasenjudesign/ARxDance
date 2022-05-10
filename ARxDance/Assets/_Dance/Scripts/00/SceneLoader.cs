@@ -27,7 +27,7 @@ public class SceneLoader : MonoBehaviour
         if(!_isSelect){
             for(int i=0;i<_sceneNames.Length;i++){
 
-                if (GUI.Button(new Rect(400, 100+210*i, 400, 200),_sceneNames[i])){
+                if (GUI.Button(new Rect(400, 100+150*i, 400, 140),_sceneNames[i])){
                     _isSelect=true;
                     SceneManager.LoadScene(_sceneNames[i],LoadSceneMode.Additive);
                     //gameObject.SetActive(false);

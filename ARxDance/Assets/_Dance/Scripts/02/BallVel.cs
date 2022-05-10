@@ -7,6 +7,7 @@ public class BallVel : MonoBehaviour
 
     private Vector3 _pastPos;
     public Vector3 velocity=Vector3.zero;
+    public float velocityMag = 0;
     public Vector3 smoothVelocity=Vector3.zero;
     public float smoothVelocityMag = 0;
     public Vector3 normalizedSmoothVel = Vector3.zero;
@@ -31,6 +32,10 @@ public class BallVel : MonoBehaviour
 
         var p = transform.position;
         velocity = p - _pastPos;
+
+        
+        velocityMag = velocity.magnitude;
+        
         smoothVelocity+=(velocity-smoothVelocity)/10f;
         normalizedSmoothVel=smoothVelocity.normalized;
         smoothVelocityMag=smoothVelocity.magnitude;
