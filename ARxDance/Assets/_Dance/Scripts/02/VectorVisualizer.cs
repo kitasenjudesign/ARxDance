@@ -9,7 +9,8 @@ public class VectorVisualizer : MonoBehaviour {
     [SerializeField] protected Material _mat;
     [SerializeField] private BallVel[] _ballVel;
     [SerializeField] private float _velocityTh = 0.02f;
-    
+    [SerializeField] private float _velocityStregth = 0;
+
     protected Matrix4x4[] _matrices;
     protected Vector4[] _colors;
     protected MaterialPropertyBlock _propertyBlock;
@@ -76,7 +77,7 @@ public class VectorVisualizer : MonoBehaviour {
                     _ballVel[i].transform.position;
 
                 _data[_index%_data.Length].velocity = 
-                    _ballVel[i].velocity*1.5f;
+                    _ballVel[i].velocity*_velocityStregth;
 
                 _data[_index%_data.Length].time=0;
                 _index++;
@@ -105,13 +106,13 @@ public class VectorVisualizer : MonoBehaviour {
 
         Graphics.DrawMeshInstanced(
                 _mesh, 
-                0, 
+                0,
                 _mat, 
-                _matrices, 
+                _matrices,
                 _count, 
                 _propertyBlock, 
                 ShadowCastingMode.On, 
-                false, 
+                false,
                 gameObject.layer
         );
 

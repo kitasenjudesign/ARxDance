@@ -23,20 +23,31 @@ public class BallVel : MonoBehaviour
     void Update()
     {
 
-        /*
-        Debug.DrawLine(
-            transform.position, 
-            transform.position + velocity.normalized,
-            Color.red
-        );*/
-
         var p = transform.position;
+
         velocity = p - _pastPos;
+
+        if( Mathf.Abs(velocity.x) > 10f ) Debug.Log("error");
+        if( Mathf.Abs(velocity.y) > 10f ) Debug.Log("error");
+        if( Mathf.Abs(velocity.z) > 10f ) Debug.Log("error");
+        
+        /*
+        if(float.IsInfinity(velocity.x) || float.IsNaN(velocity.x)){
+            Debug.Log(velocity.x);
+        }
+        if(float.IsInfinity(velocity.y) || float.IsNaN(velocity.y)){
+            Debug.Log(velocity.y);
+        }
+        if(float.IsInfinity(velocity.z) || float.IsNaN(velocity.z)){
+            Debug.Log(velocity.z);
+        }*/
+                
+
 
         
         velocityMag = velocity.magnitude;
         
-        smoothVelocity+=(velocity-smoothVelocity)/10f;
+        smoothVelocity+=(velocity-smoothVelocity)/2f;
         normalizedSmoothVel=smoothVelocity.normalized;
         smoothVelocityMag=smoothVelocity.magnitude;
         

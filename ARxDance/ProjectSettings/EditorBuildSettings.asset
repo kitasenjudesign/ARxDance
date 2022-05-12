@@ -9,22 +9,22 @@ EditorBuildSettings:
     path: Assets/_Dance/Scenes/00_TopMenu.unity
     guid: e332baac241b2432aa6cbc0398f55bc6
   - enabled: 1
-    path: Assets/_Dance/Scenes/01/01_basic.unity
-    guid: 1b8de4119d7804725aac128f523a31d1
+    path: Assets/_Dance/Scenes/01ar/01_basic.unity
+    guid: 438d717e961cf40519b133c122fe6fdc
   - enabled: 1
-    path: Assets/_Dance/Scenes/02/02_ball.unity
+    path: Assets/_Dance/Scenes/02ar/02_ball.unity
     guid: c9f690ee7312f4ebea114c869f46edba
   - enabled: 1
-    path: Assets/_Dance/Scenes/02/02_connect.unity
+    path: Assets/_Dance/Scenes/02ar/02_connect.unity
     guid: 3977b1e22a5cf4d24be3396b645f0dec
   - enabled: 1
-    path: Assets/_Dance/Scenes/02/02_trail.unity
+    path: Assets/_Dance/Scenes/02ar/02_trail.unity
     guid: 520478b1a6e4e493285f9f3aa5b3b68d
   - enabled: 1
-    path: Assets/_Dance/Scenes/02/02_velocity.unity
+    path: Assets/_Dance/Scenes/02ar/02_velocity.unity
     guid: 6ee6cf21e23464dc38653c05649f573e
   - enabled: 1
-    path: Assets/_Dance/Scenes/02/02_terumin.unity
+    path: Assets/_Dance/Scenes/02ar/02_terumin.unity
     guid: 4915ba9bf9fe147ad826a3608359e6ac
   - enabled: 1
     path: Assets/_Dance/Scenes/03/03_Stencil.unity

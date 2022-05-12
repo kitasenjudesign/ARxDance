@@ -6,6 +6,7 @@ public class BgSwitcher : MonoBehaviour
 {
 
     [SerializeField] private Material _bgMat;
+    private GUIStyle _style;
 
     // Start is called before the first frame update
     void Start()
@@ -13,15 +14,28 @@ public class BgSwitcher : MonoBehaviour
         _bgMat.SetColor("_Color",Color.white);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        //タップされた
-        if(Input.GetMouseButtonDown(0)){
-            var col = _bgMat.GetColor("_Color");
+    private void OnGUI(){
+        
+        if(_style==null){
+
+            _style = new GUIStyle(GUI.skin.button);
+            _style.fontSize = 22;
+            _style.normal.textColor = Color.white;
+            
+        }
+
+        if( GUI.Button(new Rect(0, Screen.height-200, 100, 100),"[BG]",_style) ){
+             var col = _bgMat.GetColor("_Color");
             _bgMat.SetColor("_Color", 
                 col==Color.white ? Color.black : Color.white
             );
         }
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
     }
 }

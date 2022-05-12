@@ -11,8 +11,8 @@ public class PieceData {
         6f * ( Random.value-0.5f )       
     );
     public Quaternion rot =Quaternion.Euler(0,0,0);
-    public Vector3 scale = new Vector3(0.01f,0.01f,0.25f);
-    public Vector3 baseScale = new Vector3(0.01f,0.01f,0.25f);
+    public Vector3 scale = new Vector3(0.005f,0.005f,0.25f);
+    public Vector3 baseScale = new Vector3(0.005f,0.005f,0.25f);
     public Vector4 uv = new Vector4();
     public Vector3 velocity = Vector3.zero;
     public float masatsu = 0.99f + 0.008f * Random.value;
@@ -23,14 +23,9 @@ public class PieceData {
         pos += velocity;
         //velocity*=0.99f;
         //var mag = velocity.magnitude;
-
-        //velocity.x += mag*0.02f* Mathf.PerlinNoise(pos.y,pos.z);
-        //velocity.y += mag*0.02f* Mathf.PerlinNoise(pos.z,pos.x);
-        //velocity.z += mag*0.02f* Mathf.PerlinNoise(pos.x,pos.y);
-        //velocity*=0.99f;
-
+        
         var mag = velocity.sqrMagnitude;
-        if(mag>0.01f*0.01f){
+        if(mag>0.001f*0.001f){
             rot = Quaternion.LookRotation(velocity,Vector3.up);
         }
         
@@ -46,7 +41,7 @@ public class PieceData {
 
             scale.x = baseScale.x;
             scale.y = baseScale.y;
-            scale.z = 0.06f + mag*200f;
+            scale.z = Mathf.Min( 0.1f + mag*200f, 1f);
             
         }
 

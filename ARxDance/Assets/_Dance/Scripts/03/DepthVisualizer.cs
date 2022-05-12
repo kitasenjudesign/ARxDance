@@ -10,7 +10,7 @@ public class DepthVisualizer : MonoBehaviour {
     [SerializeField] private BallVel[] _ballVel;
     [SerializeField] private float _lim;
     [SerializeField] private float _spd=0.05f;
-    [SerializeField] private bool _isNormalize=false;
+    //[SerializeField] private bool _isNormalize=false;
     
     protected Matrix4x4[] _matrices;
     protected Vector4[] _colors;
