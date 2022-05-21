@@ -15,6 +15,8 @@ public class TrackedBalls : MonoBehaviour
     [SerializeField] public BallData[] _balls;
     [SerializeField] public MeshRenderer[] _objs;
     private GUIStyle _style;
+    private bool _enabled=false;
+
     void Start()
     {
 
@@ -31,7 +33,7 @@ public class TrackedBalls : MonoBehaviour
             
         }
 
-        if( GUI.Button(new Rect(0, Screen.height-100, 100, 100),"[BALL]",_style) ){
+        if( GUI.Button(new Rect(0, Screen.height-100, 100, 100),"BALL\n"+_objs[0].enabled,_style) ){
             for(int i=0;i<_objs.Length;i++){
                 _objs[i].enabled = !_objs[i].enabled;
             }

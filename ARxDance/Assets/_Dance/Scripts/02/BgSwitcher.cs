@@ -24,8 +24,9 @@ public class BgSwitcher : MonoBehaviour
             
         }
 
-        if( GUI.Button(new Rect(0, Screen.height-200, 100, 100),"[BG]",_style) ){
-             var col = _bgMat.GetColor("_Color");
+        var col = _bgMat.GetColor("_Color");
+        if( GUI.Button(new Rect(0, Screen.height-200, 100, 100),"BG\n"+(col==Color.white),_style) ){
+             
             _bgMat.SetColor("_Color", 
                 col==Color.white ? Color.black : Color.white
             );

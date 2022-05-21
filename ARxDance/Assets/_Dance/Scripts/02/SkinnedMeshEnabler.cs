@@ -21,7 +21,7 @@ public class SkinnedMeshEnabler : MonoBehaviour
             _style.fontSize = 22;
             _style.normal.textColor = Color.white;
         }
-        if( GUI.Button(new Rect(0f, Screen.height-300f, 100f, 100f),"SKIN",_style) ){
+        if( GUI.Button(new Rect(0f, Screen.height-300f, 100f, 100f),"SKIN\n"+_meshRenderer.enabled,_style) ){
             _meshRenderer.enabled = !_meshRenderer.enabled;
         }
 

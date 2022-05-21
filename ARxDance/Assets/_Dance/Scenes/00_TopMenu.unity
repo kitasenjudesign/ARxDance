@@ -158,6 +158,7 @@ MonoBehaviour:
   - 02_velocity
   - 02_terumin
   - 02_trail
+  - 03_okgo
 --- !u!4 &693937454
 Transform:
   m_ObjectHideFlags: 0

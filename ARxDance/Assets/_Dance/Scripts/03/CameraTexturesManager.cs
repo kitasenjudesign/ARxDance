@@ -38,8 +38,6 @@ public class CameraTexturesManager : MonoBehaviour
         //_defaultBgMat.CopyPropertiesFromMaterial(_arBackground.material);
         if(_camTex && _arBackground){
             
-
-
             if(_arBackground.material){
             
                 _defaultMaterial.CopyPropertiesFromMaterial(_arBackground.material);

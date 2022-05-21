@@ -2694,7 +2694,7 @@ MonoBehaviour:
   - {fileID: 594432634}
   - {fileID: 265936844}
   _velocityTh: 0.03
-  _velocityStregth: 0.3
+  _velocityStregth: 1
 --- !u!4 &1900341792
 Transform:
   m_ObjectHideFlags: 0
